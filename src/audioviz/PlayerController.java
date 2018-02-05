@@ -127,7 +127,6 @@ public class PlayerController implements Initializable {
         });
         
         timeSlider.setOnMouseClicked((event) -> {
-            if(mediaPlayer == null) return;
             mediaPlayer.seek(Duration.millis(timeSlider.getValue()));
         });
     }
